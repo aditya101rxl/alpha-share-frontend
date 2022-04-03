@@ -35,7 +35,7 @@ const App = () => {
               <Route exact path="/post/createPost" component={Form} />
               <Route path="/post/postView/:id" component={PostView} />
               <Route path="/user/profile/:username" component={Profile} />
-              <Route path="*" component={Error} />
+              <Route component={Error} />
             </Switch>
           </Router>
         </GlobalProvider>
